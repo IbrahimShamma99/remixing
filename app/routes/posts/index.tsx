@@ -8,8 +8,12 @@ type Post = {
     title: string;
 };
 
+type LoaderData = {
+    posts: Array<Post>
+}
+
 export const loader = async () => {
-    return json({
+    return json<LoaderData>({
         posts: [
             {
                 slug: "my-first-post",
