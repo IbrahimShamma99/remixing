@@ -14,8 +14,6 @@ export const loader = async () => {
     });
 };
 
-
-
 export default function Posts() {
     const { posts } = useLoaderData() as LoaderData;
 
